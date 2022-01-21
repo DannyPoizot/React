@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Greeting from './components/Greeting';
+import LoginControl from './components/LoginControl';
 import './index.css';
 
 
 
 
 ReactDOM.render(
-  <Greeting isLoggedIn={true} />,
-  <Greeting isLoggedIn={false} />,
+  <>
+   <LoginControl />
+  </>,
   document.getElementById('root')
 );
 
