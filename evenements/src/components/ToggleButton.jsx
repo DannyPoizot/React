@@ -7,7 +7,7 @@ class ToggleButton extends Component {
 
         // Cette liaison est nécessaire afin de permettre 
         // l'utilisation de "this" dans la fonction de rappel.
-        // this.handleClick = this.handleClick.bind(this)
+        //  this.handleClick = this.handleClick.bind(this)
          
     }
 
@@ -20,8 +20,9 @@ class ToggleButton extends Component {
 
     render() {
         return (
-            //{/* <button onClick={() => this.handleClick(this.props.value)}> */}
-            <button onClick={this.handleClick.bind(this, "kikoolol")}> 
+            // <button onClick={() => this.handleClick(this.props.value)}>
+            <button onClick={this.handleClick.bind(this, "kikoolol")}>
+            // {/* <button onClick={this.handleClick}>  */}
                 {this.state.isToggleOn ? "On" : "Off"}
             </button>
         );
